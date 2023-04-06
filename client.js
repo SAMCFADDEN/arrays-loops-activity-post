@@ -7,6 +7,20 @@
  *    hobbies
  */
 
+//1
+let hobbies = ['cooking', 'soccer', 'bike riding', 'reading', 'hiking'];
+
+//2
+
+for (hobbyItem of hobbies){
+    console.log(hobbyItem)
+}
+
+//3
+console.log(`Total number of hobbies: ${hobbies.length}`)
+
+document.querySelector('#hobby-list').innerHTML = hobbies;
+
 
 // Example output
 // 1. swimming
@@ -26,6 +40,26 @@
  */
 
 
+//1
+let colorsArray = ['teal', 'green', 'blue', 'purple'];
+
+//2
+let tealCount = 0;
+
+//3
+for (let color of colorsArray){
+    if(color === 'teal'){
+        tealCount ++
+    }
+}
+
+//4
+console.log(colorsArray)
+console.log(`The color teal was found ${tealCount} time(s)`)
+
+document.querySelector('#color-list').innerHTML = colorsArray;
+
+
 // Example output
 // green, red, teal, orange, teal
 // Teal was found 2 times
@@ -40,6 +74,30 @@
  *    array and even numbers in the evenNumbers array.
  * 4. Output the original array, odd number array and even number array
  */
+
+//1
+let numbersArray = [2, 10, 13, 17, 0, 21, 3];
+
+//2
+let oddNumbers = []
+let evenNumbers = []
+
+//3
+for (let number of numbersArray){
+    if(number % 2 === 0){
+        evenNumbers.push(number)
+    }else{
+        oddNumbers.push(number)
+    }
+}
+
+
+//4
+console.log(numbersArray);
+console.log(oddNumbers);
+console.log(evenNumbers);
+
+document.querySelector('#even-and-odd').innerHTML = numbersArray;
 
 
 // Example output
@@ -57,6 +115,24 @@
  * 4. Output both arrays
  */
 
+//1
+let booleanArray = [false, true, true, false, true];
+
+//2
+let toggled = [];
+
+//3
+for (let value of booleanArray){
+    if (value){
+        toggled.push(false)
+    }else{
+        toggled.push(true)
+    }
+}
+
+//4
+console.log(booleanArray, toggled)
+
 
 // Example output
 // true, false, true, true
@@ -73,7 +149,22 @@
  * 3. Output the array
  */
 
+//1
+let anotherArray = [5,6,8,0,10,0,0]
+console.log(anotherArray)
+
+//2
+
+while(anotherArray[anotherArray.length -1] === 0){
+    anotherArray.pop()
+}
+
+console.log(anotherArray)
+
 
 // Example output
 // Before loop 3, 0, 2, 8, 0, 0, 0
 // After loop 3, 0, 2, 8
+
+
+
