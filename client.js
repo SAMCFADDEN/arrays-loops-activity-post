@@ -19,7 +19,13 @@ for (hobbyItem of hobbies){
 //3
 console.log(`Total number of hobbies: ${hobbies.length}`)
 
-document.querySelector('#hobby-list').innerHTML = hobbies;
+//Extra - Placing answer in the DOM
+
+let hobbiesList = document.querySelector('#hobby-list');
+
+for (let hobbyItem of hobbies){
+    hobbiesList.innerHTML += `<li>${hobbyItem}</li>`
+}
 
 
 // Example output
@@ -56,8 +62,6 @@ for (let color of colorsArray){
 //4
 console.log(colorsArray)
 console.log(`The color teal was found ${tealCount} time(s)`)
-
-document.querySelector('#color-list').innerHTML = colorsArray;
 
 
 // Example output
@@ -96,8 +100,6 @@ for (let number of numbersArray){
 console.log(numbersArray);
 console.log(oddNumbers);
 console.log(evenNumbers);
-
-document.querySelector('#even-and-odd').innerHTML = numbersArray;
 
 
 // Example output
